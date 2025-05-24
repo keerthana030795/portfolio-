@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana B V - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Background -->
+    <div class="interactive-bg">
+        <canvas id="backgroundCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Keerthana B V</h2>
+            </div>
+            <div class="nav-menu">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="hire-btn">Hire Me</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title text-3d">Hi, I'm <span class="gradient-text">Keerthana B V</span></h1>
+                    <p class="hero-subtitle text-3d">Aspiring Software Developer based in Bengaluru</p>
+                    <p class="hero-description text-3d">
+                        Motivated MCA student seeking an entry-level position in software development where 
+                        I can leverage my academic knowledge and practical skills.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary btn-3d">Hire Me</button>
+                        <button class="btn-secondary btn-3d">
+                            <i class="fas fa-download"></i>
+                            Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <div class="profile-inner"></div>
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title text-3d">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="text-3d">
+                        I'm a motivated MCA student seeking an entry-level position in software development where I 
+                        can leverage my academic knowledge and practical skills. I'm eager to contribute to innovative 
+                        projects while gaining hands-on experience in a collaborative environment.
+                    </p>
+                    <p class="text-3d">
+                        My goal is to enhance my programming abilities and further develop my understanding of 
+                        software engineering principles. I'm passionate about creating efficient, user-friendly 
+                        applications that solve real-world problems.
+                    </p>
+                </div>
+                
+                <div class="experience-card card-3d">
+                    <h3 class="text-3d">Internship Experience</h3>
+                    <div class="experience-item">
+                        <h4 class="text-3d">Dyashin Pvt Ltd</h4>
+                        <p class="experience-duration text-3d">1-month internship focused on React.js, Node.js, and testing</p>
+                        <ul>
+                            <li class="text-3d">Gained hands-on experience in building web applications</li>
+                            <li class="text-3d">Learned backend development with Node.js</li>
+                            <li class="text-3d">Practiced writing test cases for functionality validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="education-grid">
+                <div class="education-card" data-level="4">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-year">2024-2025</div>
+                    </div>
+                    <div class="education-content">
+                        <h3>Master of Computer Application</h3>
+                        <p class="institution">RVITM College</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="78"></div>
+                        </div>
+                        <div class="gpa-display">
+                            <span class="gpa-label">GPA:</span>
+                            <span class="gpa-value">7.8</span>
+                        </div>
+                    </div>
+                    <div class="education-decoration">
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+
+                <div class="education-card" data-level="3">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="education-year">2023</div>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p class="institution">CICMS College</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="87"></div>
+                        </div>
+                        <div class="gpa-display">
+                            <span class="gpa-label">GPA:</span>
+                            <span class="gpa-value">8.7</span>
+                        </div>
+                    </div>
+                    <div class="education-decoration">
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+
+                <div class="education-card" data-level="2">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="education-year">2020</div>
+                    </div>
+                    <div class="education-content">
+                        <h3>Pre-University Course</h3>
+                        <p class="institution">NMKRVPUC for Women</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="60"></div>
+                        </div>
+                        <div class="gpa-display">
+                            <span class="gpa-label">GPA:</span>
+                            <span class="gpa-value">6.0</span>
+                        </div>
+                    </div>
+                    <div class="education-decoration">
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+
+                <div class="education-card" data-level="1">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-year">2018</div>
+                    </div>
+                    <div class="education-content">
+                        <h3>Secondary School Leaving Certificate</h3>
+                        <p class="institution">Oxford Public English High School</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="76"></div>
+                        </div>
+                        <div class="gpa-display">
+                            <span class="gpa-label">GPA:</span>
+                            <span class="gpa-value">7.6</span>
+                        </div>
+                    </div>
+                    <div class="education-decoration">
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card-simple" data-project="shipping">
+                    <div class="project-icon">🚢</div>
+                    <h3>Shipping Transport Management</h3>
+                </div>
+
+                <div class="project-card-simple" data-project="photographer">
+                    <div class="project-icon">📸</div>
+                    <h3>Photographer Management</h3>
+                </div>
+
+                <div class="project-card-simple" data-project="badminton">
+                    <div class="project-icon">🏸</div>
+                    <h3>Badminton E-commerce</h3>
+                </div>
+
+                <div class="project-card-simple" data-project="fashion">
+                    <div class="project-icon">👗</div>
+                    <h3>Fashion E-Commerce</h3>
+                </div>
+
+                <div class="project-card-simple" data-project="kindergarten">
+                    <div class="project-icon">👶</div>
+                    <h3>Angel's Empyrean Kindergarten</h3>
+                </div>
+
+                <div class="project-card-simple" data-project="attendance">
+                    <div class="project-icon">👤</div>
+                    <h3>Employee Attendance System</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon"></div>
+                <h2 class="modal-title"></h2>
+                <p class="modal-category"></p>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description"></p>
+                <div class="modal-technologies">
+                    <h4>Technologies Used:</h4>
+                    <div class="tech-tags"></div>
+                </div>
+                <div class="modal-features">
+                    <h4>Key Features:</h4>
+                    <ul class="features-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Strengths</h2>
+            <div class="skills-content">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Web Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Database Management</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Excel</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Concepts</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SDLC</span>
+                            <span class="skill-tag">Testing</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-strengths">
+                    <h3>Key Strengths</h3>
+                    
+                    <div class="strength-item">
+                        <div class="strength-icon">💡</div>
+                        <div class="strength-content">
+                            <h4>Problem-solving</h4>
+                            <p>Proven ability to debug and resolve coding issues in projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-item">
+                        <div class="strength-icon">🔄</div>
+                        <div class="strength-content">
+                            <h4>Adaptability</h4>
+                            <p>Quick learner, able to adapt to new tools and technologies effectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-item">
+                        <div class="strength-icon">👥</div>
+                        <div class="strength-content">
+                            <h4>Team Collaboration</h4>
+                            <p>Effective communicator and team player, comfortable working in team settings and collaborating on projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item contact-3d" data-contact="email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>chandukeer1234@gmail.com</p>
+                        </div>
+                        <div class="contact-hover-effect"></div>
+                    </div>
+
+                    <div class="contact-item contact-3d" data-contact="phone">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9901724479</p>
+                        </div>
+                        <div class="contact-hover-effect"></div>
+                    </div>
+
+                    <div class="contact-item contact-3d" data-contact="location">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bengaluru, India</p>
+                        </div>
+                        <div class="contact-hover-effect"></div>
+                    </div>
+                </div>
+
+                <div class="connect-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <button class="download-resume-btn">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Keerthana B V. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
