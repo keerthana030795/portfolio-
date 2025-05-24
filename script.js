@@ -514,3 +514,24 @@ revealElements.forEach((el) => {
   el.style.transition = "opacity 0.8s ease, transform 0.8s ease"
   revealObserver.observe(el)
 })
+
+
+ document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'keerthana b v.pdf';
+    link.download = 'keerthana b v.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Simulate download completion message
+    setTimeout(() => {
+      const msg = document.getElementById('downloadMsg');
+      msg.style.display = 'block';
+
+      // Optional: Hide after 3 seconds
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 3000);
+    }, 1000);  // Wait 1 second before showing message
+  });
