@@ -8,6 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Mouse Spotlight Effect -->
+    <div class="spotlight"></div>
+
     <!-- Interactive Background -->
     <div class="interactive-bg">
         <canvas id="backgroundCanvas"></canvas>
@@ -50,8 +53,8 @@
                         I can leverage my academic knowledge and practical skills.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-primary btn-3d">Hire Me</button>
-                        <button class="btn-secondary btn-3d">
+                        <button class="btn-primary btn-3d-enhanced">Hire Me</button>
+                        <button class="btn-secondary btn-3d-enhanced" id="resumeBtn">
                             <i class="fas fa-download"></i>
                             Resume
                         </button>
@@ -59,10 +62,12 @@
                 </div>
                 <div class="hero-image">
                     <div class="profile-circle">
-                        <div class="profile-inner"></div>
-                        <div class="orbit orbit-1"></div>
+                        <div class="profile-inner">
+                            <img id="profileImage" src="sam.jpeg" alt="Profile" />
+                        </div>
+                        <!-- <div class="orbit orbit-1"></div>
                         <div class="orbit orbit-2"></div>
-                        <div class="orbit orbit-3"></div>
+                        <div class="orbit orbit-3"></div> -->
                     </div>
                 </div>
             </div>
@@ -78,8 +83,17 @@
 
     <!-- About Section -->
     <section class="about" id="about">
+        <div class="section-bg-animation">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
         <div class="container">
-            <h2 class="section-title text-3d">About Me</h2>
+            <h2 class="section-title text-3d-enhanced" data-text="About Me">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p class="text-3d">
@@ -94,8 +108,8 @@
                     </p>
                 </div>
                 
-                <div class="experience-card card-3d">
-                    <h3 class="text-3d">Internship Experience</h3>
+                <div class="experience-card card-3d-enhanced">
+                    <h3 class="text-3d-enhanced" data-text="Internship Experience">Internship Experience</h3>
                     <div class="experience-item">
                         <h4 class="text-3d">Dyashin Pvt Ltd</h4>
                         <p class="experience-duration text-3d">1-month internship focused on React.js, Node.js, and testing</p>
@@ -112,10 +126,18 @@
 
     <!-- Education Section -->
     <section class="education" id="education">
+        <div class="section-bg-animation">
+            <div class="geometric-bg">
+                <div class="geometric-shape"></div>
+                <div class="geometric-shape"></div>
+                <div class="geometric-shape"></div>
+                <div class="geometric-shape"></div>
+            </div>
+        </div>
         <div class="container">
-            <h2 class="section-title">Education Journey</h2>
+            <h2 class="section-title text-3d-enhanced" data-text="Education Journey">Education Journey</h2>
             <div class="education-grid">
-                <div class="education-card" data-level="4">
+                <div class="education-card education-card-3d" data-level="4">
                     <div class="education-header">
                         <div class="education-icon">
                             <i class="fas fa-graduation-cap"></i>
@@ -125,9 +147,6 @@
                     <div class="education-content">
                         <h3>Master of Computer Application</h3>
                         <p class="institution">RVITM College</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-progress="78"></div>
-                        </div>
                         <div class="gpa-display">
                             <span class="gpa-label">GPA:</span>
                             <span class="gpa-value">7.8</span>
@@ -139,7 +158,7 @@
                     </div>
                 </div>
 
-                <div class="education-card" data-level="3">
+                <div class="education-card education-card-3d" data-level="3">
                     <div class="education-header">
                         <div class="education-icon">
                             <i class="fas fa-user-graduate"></i>
@@ -149,9 +168,6 @@
                     <div class="education-content">
                         <h3>Bachelor of Computer Applications</h3>
                         <p class="institution">CICMS College</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-progress="87"></div>
-                        </div>
                         <div class="gpa-display">
                             <span class="gpa-label">GPA:</span>
                             <span class="gpa-value">8.7</span>
@@ -163,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="education-card" data-level="2">
+                <div class="education-card education-card-3d" data-level="2">
                     <div class="education-header">
                         <div class="education-icon">
                             <i class="fas fa-book"></i>
@@ -173,9 +189,6 @@
                     <div class="education-content">
                         <h3>Pre-University Course</h3>
                         <p class="institution">NMKRVPUC for Women</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-progress="60"></div>
-                        </div>
                         <div class="gpa-display">
                             <span class="gpa-label">GPA:</span>
                             <span class="gpa-value">6.0</span>
@@ -187,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="education-card" data-level="1">
+                <div class="education-card education-card-3d" data-level="1">
                     <div class="education-header">
                         <div class="education-icon">
                             <i class="fas fa-school"></i>
@@ -197,9 +210,6 @@
                     <div class="education-content">
                         <h3>Secondary School Leaving Certificate</h3>
                         <p class="institution">Oxford Public English High School</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-progress="76"></div>
-                        </div>
                         <div class="gpa-display">
                             <span class="gpa-label">GPA:</span>
                             <span class="gpa-value">7.6</span>
@@ -216,35 +226,42 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
+        <div class="section-bg-animation">
+            <div class="wave-bg">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title text-3d-enhanced" data-text="Projects">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card-simple" data-project="shipping">
+                <div class="project-card-simple project-card-3d" data-project="shipping">
                     <div class="project-icon">🚢</div>
                     <h3>Shipping Transport Management</h3>
                 </div>
 
-                <div class="project-card-simple" data-project="photographer">
+                <div class="project-card-simple project-card-3d" data-project="photographer">
                     <div class="project-icon">📸</div>
                     <h3>Photographer Management</h3>
                 </div>
 
-                <div class="project-card-simple" data-project="badminton">
+                <div class="project-card-simple project-card-3d" data-project="badminton">
                     <div class="project-icon">🏸</div>
                     <h3>Badminton E-commerce</h3>
                 </div>
 
-                <div class="project-card-simple" data-project="fashion">
+                <div class="project-card-simple project-card-3d" data-project="fashion">
                     <div class="project-icon">👗</div>
                     <h3>Fashion E-Commerce</h3>
                 </div>
 
-                <div class="project-card-simple" data-project="kindergarten">
+                <div class="project-card-simple project-card-3d" data-project="kindergarten">
                     <div class="project-icon">👶</div>
                     <h3>Angel's Empyrean Kindergarten</h3>
                 </div>
 
-                <div class="project-card-simple" data-project="attendance">
+                <div class="project-card-simple project-card-3d" data-project="attendance">
                     <div class="project-icon">👤</div>
                     <h3>Employee Attendance System</h3>
                 </div>
@@ -278,8 +295,17 @@
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
+        <div class="section-bg-animation">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
         <div class="container">
-            <h2 class="section-title">Skills & Strengths</h2>
+            <h2 class="section-title text-3d-enhanced" data-text="Skills & Strengths">Skills & Strengths</h2>
             <div class="skills-content">
                 <div class="technical-skills">
                     <h3>Technical Skills</h3>
@@ -287,42 +313,42 @@
                     <div class="skill-category">
                         <h4>Programming Languages</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag skill-tag-3d">Java</span>
+                            <span class="skill-tag skill-tag-3d">C++</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Web Development</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag skill-tag-3d">HTML</span>
+                            <span class="skill-tag skill-tag-3d">CSS</span>
+                            <span class="skill-tag skill-tag-3d">JavaScript</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Database Management</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag skill-tag-3d">SQL</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Tools & Technologies</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag skill-tag-3d">VS Code</span>
+                            <span class="skill-tag skill-tag-3d">Excel</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Concepts</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">SDLC</span>
-                            <span class="skill-tag">Testing</span>
-                            <span class="skill-tag">OOP</span>
-                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag skill-tag-3d">SDLC</span>
+                            <span class="skill-tag skill-tag-3d">Testing</span>
+                            <span class="skill-tag skill-tag-3d">OOP</span>
+                            <span class="skill-tag skill-tag-3d">Data Structures</span>
                         </div>
                     </div>
                 </div>
@@ -406,14 +432,14 @@
                         <a href="#" class="social-link">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://github.com/keerthana030795" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="mailto:chandukeer1234@gmail.com" class="social-link">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
-                    <button class="download-resume-btn">Download Resume</button>
+                    <button class="download-resume-btn" id="downloadResumeBtn">Download Resume</button>
                 </div>
             </div>
         </div>
