@@ -356,12 +356,12 @@ document.addEventListener("keydown", (e) => {
 
 function downloadResume() {
   // Path to your existing PDF file
-  const pdfPath = "Keerthana b v.pdf"; 
+  const pdfPath = "Keerthana_b_v.pdf"; 
 
   // Create a temporary <a> to trigger the download
   const a = document.createElement("a");
   a.href = pdfPath;
-  a.download = "Keerthana b v.pdf"; //
+  a.download = "keerthana_b_v.pdf"; //
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -518,8 +518,8 @@ revealElements.forEach((el) => {
 
  document.getElementById('downloadResumeBtn').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'keerthana b v.pdf';
-    link.download = 'keerthana b v.pdf';
+    link.href = 'keerthana_b_v.pdf';
+    link.download = 'keerthana_b_v.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
